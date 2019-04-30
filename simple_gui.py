@@ -10,7 +10,7 @@ root.geometry("1080x720")
 
 # definitions
 def speak():
-    Label(root, text="Hi",).grid(row=hiRow, column=0, sticky=W),
+    Label(root, text="Hi",).grid(row=3, column=0, sticky=W),
 def addButton():
     Button(root, text="Say 'Hi'", width=14, command=speak).grid(row=2, column=0, sticky=W)
 
