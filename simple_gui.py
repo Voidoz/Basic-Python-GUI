@@ -9,13 +9,14 @@ root.geometry("1080x720")
 
 
 # variables
-rowNum = 3
+rowNum = int(3)
 
 
 # definitions
 def speak():
-    Label(root, text="Hi",).grid(row=rowNum, column=0, sticky=W),
-    rowNum + 1
+    while True:
+        Label(root, text="Hi",).grid(row=rowNum, column=0, sticky=W),
+        rowNum + int(1)
 def addButton():
     Button(root, text="Say 'Hi'", width=14, command=speak).grid(row=2, column=0, sticky=W)
 
